@@ -1,4 +1,4 @@
-package xerus2000.github.com.wheather
+package xerus2000.github.com.weather
 
 import org.junit.Test
 
