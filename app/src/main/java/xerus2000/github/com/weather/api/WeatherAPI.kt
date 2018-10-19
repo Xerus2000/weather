@@ -15,7 +15,7 @@ interface WeatherAPI {
 	fun cityWeather(@Query("q") city: String): Call<CityWeather>
 	
 	@GET("weather")
-	fun cityWeather(@Query("lat") lat: String, @Query("lon") lon: String): Call<CityWeather>
+	fun cityWeather(@Query("lat") lat: Double, @Query("lon") lon: Double): Call<CityWeather>
 	
 	companion object {
 		fun get(): WeatherAPI {
