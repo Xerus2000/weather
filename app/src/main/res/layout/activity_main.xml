@@ -1,31 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	tools:context=".MainActivity"
-	android:orientation="vertical">
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_margin="8dp"
+  android:orientation="vertical"
+  tools:context=".WeatherSearchActivity">
 
-	<EditText
-		android:id="@+id/searchBar"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:hint="@string/city"
-		android:imeOptions="actionSearch"
-		android:importantForAutofill="no"
-		android:inputType="textAutoComplete"
-		android:layout_margin="8dp"
-		android:padding="16dp"
-		android:textSize="16sp" />
+  <EditText
+    android:id="@+id/searchBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/city"
+    android:imeOptions="actionSearch"
+    android:importantForAutofill="no"
+    android:inputType="textAutoComplete"
+    android:padding="16dp"
+    android:textSize="16sp" />
 
-	<TextView
-		android:id="@+id/textView"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="Hello World!"
-		android:layout_margin="8dp"
-		android:paddingStart="16dp"
-		android:paddingEnd="16dp"
-		android:textSize="16sp" />
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:text="Grant Location permission" />
+
+  </RelativeLayout>
+
+  <!--<TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:text="Hello World!"
+    android:textSize="16sp" />-->
 
 </LinearLayout>

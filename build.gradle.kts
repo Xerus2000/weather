@@ -5,7 +5,7 @@ buildscript {
 		google()
 	}
 	dependencies {
-		classpath("com.android.tools.build:gradle:3.2.0")
+		classpath("com.android.tools.build:gradle:3.2.+")
 	}
 }
 
@@ -15,7 +15,7 @@ plugins {
 
 allprojects {
 	repositories {
-		jcenter()
 		google()
+		jcenter()
 	}
 }

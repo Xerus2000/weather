@@ -29,7 +29,9 @@ dependencies {
 	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "0.30.0")
 	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-android", "0.30.0")
 	
-	implementation("com.android.support:appcompat-v7:26.1.0")
+	fun androidSupport(name: String) = implementation("com.android.support", name, "26.1.0")
+	androidSupport("appcompat-v7")
+	androidSupport("recyclerview-v7")
 	implementation("com.android.support.constraint:constraint-layout:1.1.3")
 	
 	implementation("com.google.android.gms", "play-services-location", "16.0.0")
