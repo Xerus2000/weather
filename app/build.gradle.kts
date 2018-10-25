@@ -34,6 +34,8 @@ dependencies {
 	androidSupport("recyclerview-v7")
 	implementation("com.android.support.constraint:constraint-layout:1.1.3")
 	
+	implementation("android.arch.lifecycle:livedata-core:1.1.1")
+	
 	implementation("com.google.android.gms", "play-services-location", "16.0.0")
 	
 	implementation("com.squareup.retrofit2", "retrofit", "2.4.0")
