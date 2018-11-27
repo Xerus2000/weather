@@ -10,7 +10,7 @@ buildscript {
 }
 
 plugins {
-	kotlin("jvm") version "1.2.71"
+	kotlin("jvm") version "1.3.10"
 }
 
 allprojects {

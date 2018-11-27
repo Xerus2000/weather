@@ -4,8 +4,8 @@ import android.arch.lifecycle.MutableLiveData
 import android.support.v4.app.FragmentActivity
 import android.util.Log
 import com.google.android.gms.location.LocationServices
-import kotlinx.coroutines.experimental.GlobalScope
-import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import retrofit2.Call
 import xerus2000.github.com.weather.api.CityWeather
 import java.io.PrintWriter

@@ -19,7 +19,7 @@ import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.coroutines.experimental.asCoroutineDispatcher
+import kotlinx.coroutines.asCoroutineDispatcher
 import xerus2000.github.com.weather.api.CityWeather
 import xerus2000.github.com.weather.api.WeatherAPI
 

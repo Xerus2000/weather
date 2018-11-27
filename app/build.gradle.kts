@@ -26,8 +26,8 @@ android {
 
 dependencies {
 	kotlin("stdlib-jdk7")
-	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "0.30.0")
-	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-android", "0.30.0")
+	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core")
+	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-android", "1.0.1")
 	
 	fun androidSupport(name: String) = implementation("com.android.support", name, "26.1.0")
 	androidSupport("appcompat-v7")
@@ -41,9 +41,7 @@ dependencies {
 	implementation("com.squareup.retrofit2", "retrofit", "2.4.0")
 	implementation("com.squareup.retrofit2", "converter-gson", "2.4.0")
 	
+	testImplementation("junit:junit:4.12")
 	androidTestImplementation("com.android.support.test:runner:1.0.2")
 	androidTestImplementation("com.android.support.test.espresso:espresso-core:3.0.2")
-	testImplementation("junit:junit:4.12")
 }
-
-kotlin.experimental.coroutines = Coroutines.ENABLE
